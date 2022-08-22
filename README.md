@@ -4,4 +4,4 @@ This is a program that will randomly generate a password after the user chooses 
 
 https://flllncnstnc.github.io/SecurePasswordGenerator/
 
-![] (Screenshot%20(2).png)
+![](Screenshot%20(2).png)
