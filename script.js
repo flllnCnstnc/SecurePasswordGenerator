@@ -28,9 +28,9 @@ function code() {
     var allowedCharacters = []
 
     if(!act1 && !act2 && !act3 && !act4){
-        return "At least one must be chosen"
+        return "At least one category must be chosen"
     }
-    
+
     if (act1) {
         allowedCharacters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
@@ -46,6 +46,14 @@ function code() {
     if (act4) {
         allowedCharacters += "!@#$%^&*()-_"
     }
+    
+    var password = ""
+
+    for(let i=1;i<=plength;i++){
+        var index= Math.floor(Math.random() * allowedCharacters.length)
+        password += allowedCharacters[index] // password = password + allowedcharaters[index]
+    }
+    return password
     
 
 
